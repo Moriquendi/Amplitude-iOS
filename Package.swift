@@ -15,8 +15,9 @@ let package = Package(
     ],
     targets: [
           .target(
+            platforms: [.iOS],
             name: "EventExplorer",
-//            path: "Sources/EventExplorer",
+            path: "Sources/EventExplorer",
             resources: [
                 .process("Resources/AMPBubbleView.xib"),
                 .process("Resources/AMPInfoViewController.xib"),
@@ -40,7 +41,7 @@ let package = Package(
              dependencies: [
                 .target(name: "EventExplorer", condition: .when(platforms: [.iOS])),
             ],
-//            path: "Sources/Amplitude",
+            path: "Sources/Amplitude",
             resources: [.process("Resources/ComodoRsaDomainValidationCA.der")],
             publicHeadersPath: "."),
     ]
