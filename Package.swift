@@ -42,7 +42,7 @@ let package = Package(
             ],
             path: "Sources/Amplitude",
             resources: [.process("Resources/ComodoRsaDomainValidationCA.der")],
-            publicHeadersPath: "."),
+            publicHeadersPath: "Sources/Amplitude"),
     ]
 )
 
